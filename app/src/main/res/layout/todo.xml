@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dp"
+    android:weightSum="1">
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/status" >
+    </CheckBox>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World"
+        android:textSize="20dp"
+        android:id="@+id/text"
+        android:layout_weight="1">
+    </TextView>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/position" >
+    </TextView>
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/delete"
+        android:id="@+id/delete"
+        android:layout_weight="0.5">
+    </ImageView>
+</LinearLayout>

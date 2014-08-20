@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codebrahma.todos.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <EditText android:id="@+id/new_todo"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/todo_hint"
+            android:singleLine="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:id="@+id/enter_key"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/todo_list"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:padding="4dip"
+        android:background="#FF666666" >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/completed_todos"
+            android:layout_weight="1"
+            android:textColor="#fff" >
+        </TextView>
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/erase_completed"
+            android:layout_weight="1"
+            android:text="@string/erase"
+            >
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
